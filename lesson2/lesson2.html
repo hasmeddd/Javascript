@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="thu_sw"></h2>
+    <h2 id="thu_ar"></h2>
+    <h2 id="songuyento"></h2>
+    <script src="lesson2.js"></script>
+    <hr />
+    <form action="#">
+      <span>Họ và Tên:</span>
+      <input type="text" id="hoten" /><br />
+      <span>Email</span>
+      <input
+        type="text"
+        id="email"
+        onkeyup="checkEmail(document.getElementById('email').value)"
+      />
+      <span id="r_email"></span>
+      <br />
+      <span>Tên đăng nhập:</span>
+      <input type="text" id="tendangnhap" /><br />
+      <span>Mật khẩu:</span>
+      <input
+        type="password"
+        id="password"
+        onkeyup="checkPassword(document.getElementById('password').value)"
+      />
+      <span id="r_password"></span><br />
+      <button type="submit" onclick="submitForm()" id="submit">Submit</button>
+    </form>
+    <hr />
+    <div id="ketqua"></div>
+  </body>
+</html>
